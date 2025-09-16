@@ -75,33 +75,15 @@ OFFSET start
 - `SELECT * FROM cities WHERE name LIKE '%c_t%';` (1973)
 
 
+## TP 1
 
+En individuel, vous allez devoir continuer, ce fichier readme : 
 
+- Vous créez votre propre fichier, a part
+- Vous traitez un maximum de cas de figure sur le site sql.sh
+- Vous ne faites ni de jointure, ni de procédures stockées, ni de trigger
 
+Vous allez devoir pour chaque instruction que l'on n'a pas vu : 
 
-
-```SQL
-
--- la table de liaison
--- on stock ce résultat dans X
-SELECT
-    id
-FROM
-    table1
-
-
-SELECT 
-    *
-FROM
-    table2
-WHERE
-    foreign_key
-    IN
-    (SELECT
-        id
-    FROM
-        table1)
-
-
-
-```
+1. expliquer l'instruction rapidement
+2. en vous servant de la base de données "SAKILA", vous allez créer 1 à 3 cas defigure nécessitants une requete. Par exemple :"Récupérer tous les state_code de la table cities sans aucun doublon". Vous devrez ensuite écrire la requete SQL correspondante, par exemple : `SELECT DISTINCT state_code FROM cities;`. Notez le nombre de résultats obtenus par exemple (1185).
