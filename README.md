@@ -4,6 +4,7 @@
 
 - `https://sql.sh` : cours global pour les requêtes
 - `https://github.com/Microleadoff/database-installer-py` : lien de l'installateur des 4 BDD en python
+- `https://cartman34.fr/wp-content/uploads/2017/01/sql_joins.jpg`, `https://miro.medium.com/v2/0*bkfApXMFeO1E7Pom.png` : images sur les jointures
 
 ### Ordre des mots-clés dans une requête
 
@@ -74,6 +75,50 @@ OFFSET start
 - `SELECT * FROM cities WHERE name LIKE '%zw%';` (76)
 - `SELECT * FROM cities WHERE name LIKE '%c_t%';` (1973)
 
+## Explication des jointures
+
+### Généralités 
+
+- Permet de récupérer des données reliées entre plusieurs tables
+- Comment savoir quelle table est à gauche ou à droite : la première indiquée est écrite à gauche de l'autre : c'est donc la table de gauche
+- 4 types de jointure différents
+    - LEFT : récupère les informations de la table de gauche, et les lie avec la table de droite
+    - RIGHT : récupère les informations de la table de droite, et les lie avec la table de gauche
+    - INNER : récupère les informations des tables de gauche ET de droite, dont la FK n'est pas nulle
+    - OUTER : récupère les informations des tables de gauche et de droite
+
+### LEFT INCLUSIVE
+
+<img src="./images/1.png" alt="LEFT INCLUSIVE" />
+- 1 image
+- 1 explication
+- 1 exemple de requete
+
+### LEFT EXCLUSIVE
+
+<img src="./images/2.png" alt="LEFT EXCLUSIVE" />
+
+### RIGHT INCLUSIVE
+
+<img src="./images/3.png" alt="LEFT EXCLUSIVE" />
+
+### RIGHT EXCLUSIVE
+
+<img src="./images/4.png" alt="LEFT EXCLUSIVE" />
+
+### FULL OUTER INCLUSIVE
+
+<img src="./images/5.png" alt="LEFT EXCLUSIVE" />
+
+### FULL OUTER EXCLUSIVE
+
+<img src="./images/6.png" alt="LEFT EXCLUSIVE" />
+
+### INNER
+
+<img src="./images/7.png" alt="LEFT EXCLUSIVE" />
+
+
 
 ## TP 1
 
@@ -87,3 +132,18 @@ Vous allez devoir pour chaque instruction que l'on n'a pas vu :
 
 1. expliquer l'instruction rapidement
 2. en vous servant de la base de données "SAKILA", vous allez créer 1 à 3 cas defigure nécessitants une requete. Par exemple :"Récupérer tous les state_code de la table cities sans aucun doublon". Vous devrez ensuite écrire la requete SQL correspondante, par exemple : `SELECT DISTINCT state_code FROM cities;`. Notez le nombre de résultats obtenus par exemple (1185).
+
+
+
+
+
+
+```SQL
+
+SELECT * FROM A INNER JOIN B ON A.key = B.key
+SELECT * FROM B OUTER JOIN A ON A.key = B.key
+SELECT * FROM B LEFT JOIN A ON A.key = B.key
+SELECT * FROM A RIGHT JOIN B ON A.key = B.key
+
+
+```
