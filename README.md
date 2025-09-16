@@ -90,7 +90,21 @@ OFFSET start
 ### LEFT INCLUSIVE
 
 <img src="./images/1.png" alt="LEFT INCLUSIVE" />
-- 1 image
+
+Récupère toutes les lignes de la table de gauche, ainsi que les lignes de la table de droite dont la Foreign Key n'est pas nulle
+
+Exemple de requête générique : 
+
+```SQL
+SELECT [LIST] FROM TableA as A LEFT JOIN TableB as B ON A.Foreignkey = B.Foreignkey;
+```
+
+Exemple de requête dans la BDD World : 
+
+```SQL
+SELECT * FROM cities as ci LEFT JOIN countries as c ON ci.country_id = c.id;
+```
+
 - 1 explication
 - 1 exemple de requete
 
@@ -100,23 +114,23 @@ OFFSET start
 
 ### RIGHT INCLUSIVE
 
-<img src="./images/3.png" alt="LEFT EXCLUSIVE" />
+<img src="./images/3.png" alt="RIGHT INCLUSIVE" />
 
 ### RIGHT EXCLUSIVE
 
-<img src="./images/4.png" alt="LEFT EXCLUSIVE" />
+<img src="./images/4.png" alt="RIGHT EXCLUSIVE" />
 
 ### FULL OUTER INCLUSIVE
 
-<img src="./images/5.png" alt="LEFT EXCLUSIVE" />
+<img src="./images/5.png" alt="FULL OUTER INCLUSIVE" />
 
 ### FULL OUTER EXCLUSIVE
 
-<img src="./images/6.png" alt="LEFT EXCLUSIVE" />
+<img src="./images/6.png" alt="FULL OUTER EXCLUSIVE" />
 
 ### INNER
 
-<img src="./images/7.png" alt="LEFT EXCLUSIVE" />
+<img src="./images/7.png" alt="INNER" />
 
 
 
