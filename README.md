@@ -377,5 +377,5 @@ TODO possible
 - Fonctions
 - NoSQL
 - Benchmark
--  début des révisions pour Merise / datadict
+- Début des révisions pour Merise / datadict
 - etc....
