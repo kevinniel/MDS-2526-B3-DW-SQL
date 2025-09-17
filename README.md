@@ -268,7 +268,35 @@ Il existe 4 possibilités de traitement pour les `ON UPDATE` & `ON DELETE` :
 - `NO ACTION` : blocage seulement à la validation de la transaction.
 
 # TP
-Réaliser les requêtes suivantes : 
+
+Réaliser les requêtes suivantes, en individuel, et noter le nombre de résultat de vos requêtes pour chacune (gradez une trace de vos requêtes quand meme), en travaillant sur la base de données `EMPLOYEES` : 
+
+Sélectionner tous les employés
+Sélectionner tous les employés par leurs noms et prénoms
+Sélectionner les noms distincts des employés
+Sélectionner les noms et prénoms distincts des employés
+Sélectionner les noms et prénoms des employés dont le nom est « alencar »
+Sélectionner les employés dont le nom est « alencar » et de sexe masculin
+Sélectionner les employés dont le prénom « Danai » ou « Leen » en utilisant « OR »
+Sélectionner les employés dont le prénom « Danai » ou « Leen » en utilisant « IN »
+Sélectionner les employés dont le nom est « alencar » et le prénom « Danai » ou « Leen » en utilisant « OR »
+Sélectionner les employés dont le nom est « alencar » et le prénom « Danai » ou « Leen » en utilisant « IN »
+Sélectionner les employés dont le numéro d’employé est compris entre 50000 et 50150
+Sélectionner les employés dont le nom est « alencar » et le numéro d’employé est compris entre 50000 et 60000
+Sélectionner les employés dont le nom est « alencar » et le prénom est « danai » ou le numéro d’employé est compris entre 50000 et 60000
+Sélectionner les employés dont le nom est « alencar » ou, le prénom est « danai » ou « leen » et le numéro d’employé est compris entre 50000 et 60000
+Sélectionner les employés dont le prénom commence par un « T »
+Sélectionner les employés masculin dont la deuxième lettre du prénom est un « T »
+Sélectionner les employés dont le nom est « alencar » et le prénom « danai » ou le numéro d’employé commence par un 5
+Sélectionner les employés dont le prénom commence par un « T » et termine par un « B »
+Sélectionner les employés dont le prénom commence par un « T », la 3ème lettre est un « R »
+Sélectionner les employés dont le prénom commence par un « T », la 3ème lettre est un « R » et le numéro d’employé est compris entre 50000 et 60000
+Sélectionner les employés dont le prénom contient « TZV »
+Sélectionner les employés masculin ou dont le numéro d’employé est compris entre 50000 et 60000 et, le prénom contient « TZV »
+Sélectionner les employés dont le prénom termine par « CAL»
+Sélectionner les employés dont le prénom termine par « CAL» de genre masculin et dont le numéro d’employé est compris entre 50000 et 60000
+Sélectionner les employés dont le prénom est « danai » ou « leen » et le nom se termine par « TH» ou dont le numéro d’employé est compris entre 50000 et 100000
+Sélectionner les employés dont la date de naissance est null
 
 
 
