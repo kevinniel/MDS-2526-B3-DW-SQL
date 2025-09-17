@@ -375,7 +375,7 @@ Réaliser les requêtes suivantes, en individuel, et noter le nombre de résulta
 
 TODO possible
 - Fonctions
-- Merise / datadict
 - NoSQL
 - Benchmark
+-  début des révisions pour Merise / datadict
 - etc....
