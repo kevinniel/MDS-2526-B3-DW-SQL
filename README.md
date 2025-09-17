@@ -252,6 +252,11 @@ Vous allez devoir pour chaque instruction que l'on n'a pas vu :
 2. en vous servant de la base de données "SAKILA", vous allez créer 1 à 3 cas defigure nécessitants une requete. Par exemple :"Récupérer tous les state_code de la table cities sans aucun doublon". Vous devrez ensuite écrire la requete SQL correspondante, par exemple : `SELECT DISTINCT state_code FROM cities;`. Notez le nombre de résultats obtenus par exemple (1185).
 
 
+## TP 2
+
+Refaire les requêtes dans la BDD World (des requêtes qui font sens !) pour qu'on les intègre dans le cours
+Idem que TP1, mais sur les jointures. (BDD SAKILA)
+
 
 
 
