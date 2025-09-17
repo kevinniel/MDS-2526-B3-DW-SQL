@@ -102,35 +102,124 @@ SELECT [LIST] FROM TableA as A LEFT JOIN TableB as B ON A.Foreignkey = B.Foreign
 Exemple de requête dans la BDD World : 
 
 ```SQL
-SELECT * FROM cities as ci LEFT JOIN countries as c ON ci.country_id = c.id;
+-- SELECT * FROM cities as ci LEFT JOIN countries as c ON ci.country_id = c.id;
 ```
-
-- 1 explication
-- 1 exemple de requete
 
 ### LEFT EXCLUSIVE
 
 <img src="./images/2.png" alt="LEFT EXCLUSIVE" />
 
+Récupère toutes les lignes de la table de gauche, dont la Foreign Key de la table de droite est nulle.
+
+Exemple de requête générique : 
+
+```SQL
+SELECT [LIST] FROM TableA as A LEFT JOIN TableB as B ON A.Foreignkey = B.Foreignkey WHERE B.Foreignkey IS NULL;
+```
+
+Exemple de requête dans la BDD World : 
+
+```SQL
+-- SELECT * FROM cities as ci LEFT JOIN countries as c ON ci.country_id = c.id WHERE c.id IS NULL;
+```
+
 ### RIGHT INCLUSIVE
 
 <img src="./images/3.png" alt="RIGHT INCLUSIVE" />
+
+Récupère toutes les lignes de la table de droite, ainsi que les lignes de la table de gauche dont la Foreign Key n'est pas nulle
+
+Exemple de requête générique : 
+
+```SQL
+SELECT [LIST] FROM TableA as A RIGHT JOIN TableB as B ON A.Foreignkey = B.Foreignkey;
+```
+
+Exemple de requête dans la BDD World : 
+
+```SQL
+-- SELECT * FROM cities as ci RIGHT JOIN countries as c ON ci.country_id = c.id;
+```
 
 ### RIGHT EXCLUSIVE
 
 <img src="./images/4.png" alt="RIGHT EXCLUSIVE" />
 
+Récupère toutes les lignes de la table de droite, dont la Foreign Key de la table de gauche est nulle.
+
+Exemple de requête générique : 
+
+```SQL
+SELECT [LIST] FROM TableA as A RIGHT JOIN TableB as B ON A.Foreignkey = B.Foreignkey WHERE A.Foreignkey IS NULL;
+```
+
+Exemple de requête dans la BDD World : 
+
+```SQL
+-- SELECT * FROM cities as ci RIGHT JOIN countries as c ON ci.country_id = c.id WHERE ci.country_id IS NULL;
+```
+
 ### FULL OUTER INCLUSIVE
 
 <img src="./images/5.png" alt="FULL OUTER INCLUSIVE" />
+
+Récupère toutes les lignes des tables de droite et de gauche.
+
+Exemple de requête générique : 
+
+```SQL
+SELECT [LIST] FROM TableA as A FULL OUTER JOIN TableB as B ON A.Foreignkey = B.Foreignkey;
+```
+
+Exemple de requête dans la BDD World : 
+
+```SQL
+-- SELECT * FROM cities as ci RIGHT JOIN countries as c ON ci.country_id = c.id WHERE ci.country_id IS NULL;
+```
 
 ### FULL OUTER EXCLUSIVE
 
 <img src="./images/6.png" alt="FULL OUTER EXCLUSIVE" />
 
+Récupère toutes les lignes des tables de droite et de gauche, dont la Foreign Key de la table de gauche n'est pas nulle.
+
+Exemple de requête générique : 
+
+```SQL
+SELECT [LIST] FROM TableA as A FULL OUTER JOIN TableB as B ON A.Foreignkey = B.Foreignkey WHERE A.Foreignkey IS NULL OR B.Foreignkey IS NULL;
+```
+
+Exemple de requête dans la BDD World : 
+
+```SQL
+-- SELECT * FROM cities as ci RIGHT JOIN countries as c ON ci.country_id = c.id WHERE ci.country_id IS NULL;
+```
+
 ### INNER
 
 <img src="./images/7.png" alt="INNER" />
+
+Récupère toutes les lignes des tables de droite et de gauche, dont la Foreign Key entre les deux tables n'est pas nulle.
+
+Exemple de requête générique : 
+
+```SQL
+SELECT [LIST] FROM TableA as A INNER JOIN TableB as B ON A.Foreignkey = B.Foreignkey;
+```
+
+Exemple de requête dans la BDD World : 
+
+```SQL
+-- SELECT * FROM cities as ci RIGHT JOIN countries as c ON ci.country_id = c.id WHERE ci.country_id IS NULL;
+```
+
+
+
+
+
+
+
+
 
 
 
