@@ -56,7 +56,7 @@ OFFSET start
 | `LIKE 'a_c'`  | Le caractère `_` représente **un seul caractère** (contrairement à `%`)     | `aac`, `abc`, `azc`           |
 
 
-## Exemples de requetes pour pratique sur la BDD WORLD
+## Exemples de requetes pour pratiquer sur la BDD WORLD
 
 - `SELECT DISTINCT state_code FROM cities;` (1185)
 - `SELECT * FROM cities WHERE state_code = "07";` (435)
@@ -74,6 +74,28 @@ OFFSET start
 - `SELECT * FROM cities WHERE name LIKE '%a';` (25624)
 - `SELECT * FROM cities WHERE name LIKE '%zw%';` (76)
 - `SELECT * FROM cities WHERE name LIKE '%c_t%';` (1973)
+
+## Explication des sous-requêtes
+
+- Ce sont des requêtes imbriquées
+- Il faut les mettre entre parenthèses pour ne pas créer de bug
+
+Exemple : 
+
+```SQL
+
+-- Requete 1 : on récupère toutes les villes
+SELECT * FROM city;
+
+-- Requete 2 : on récupère tous les pays dont le nom contient "au"
+SELECT country_id FROM country WHERE country LIKE "%au%";
+
+-- Requete 3 : on veut toutes les villes qui appartiennent à un pays dont le nom contient "au"
+SELECT * FROM city WHERE country_id IN (
+    SELECT country_id FROM country WHERE country LIKE "%au%"
+);
+
+```
 
 ## Explication des jointures
 
@@ -220,6 +242,10 @@ Il existe 4 possibilités de traitement pour les `ON UPDATE` & `ON DELETE` :
 - `SET NULL` : lors d’un `UPDATE` ou d’un `DELETE`, les colonnes de clé étrangère des lignes enfants sont remplacées par `NULL` (si elles l’acceptent).
 - `RESTRICT` : blocage instantané.
 - `NO ACTION` : blocage seulement à la validation de la transaction.
+
+
+
+
 
 
 
