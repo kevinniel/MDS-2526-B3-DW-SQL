@@ -89,7 +89,7 @@ OFFSET start
 
 Quelques rappels **SIMPLES** pour la gestion des foreign keys dans les relations : 
 
-<img src="./images/simple.png" alt="SIMPLE" />
+<img src="./images/simple_fk.png" alt="SIMPLE" />
 
 ### LEFT INCLUSIVE
 
