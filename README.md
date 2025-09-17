@@ -103,10 +103,10 @@ Exemple de requête générique :
 SELECT [LIST] FROM TableA as A LEFT JOIN TableB as B ON A.Foreignkey = B.Foreignkey;
 ```
 
-Exemple de requête dans la BDD World : 
+Exemple de requête dans la BDD SAKILA : 
 
 ```SQL
--- SELECT * FROM cities as ci LEFT JOIN countries as c ON ci.country_id = c.id;
+SELECT * FROM film AS A LEFT JOIN language AS B ON A.language_id = B.language_id;
 ```
 
 ### LEFT EXCLUSIVE
@@ -121,10 +121,10 @@ Exemple de requête générique :
 SELECT [LIST] FROM TableA as A LEFT JOIN TableB as B ON A.Foreignkey = B.Foreignkey WHERE B.Foreignkey IS NULL;
 ```
 
-Exemple de requête dans la BDD World : 
+Exemple de requête dans la BDD SAKILA : 
 
 ```SQL
--- SELECT * FROM cities as ci LEFT JOIN countries as c ON ci.country_id = c.id WHERE c.id IS NULL;
+SELECT * FROM film AS A LEFT JOIN language AS B ON A.language_id = B.language_id WHERE B.language_id IS NULL;
 ```
 
 ### RIGHT INCLUSIVE
@@ -139,10 +139,10 @@ Exemple de requête générique :
 SELECT [LIST] FROM TableA as A RIGHT JOIN TableB as B ON A.Foreignkey = B.Foreignkey;
 ```
 
-Exemple de requête dans la BDD World : 
+Exemple de requête dans la BDD SAKILA : 
 
 ```SQL
--- SELECT * FROM cities as ci RIGHT JOIN countries as c ON ci.country_id = c.id;
+SELECT film.title, language.name FROM language RIGHT JOIN film ON film.original_language_id = language.language_id;
 ```
 
 ### RIGHT EXCLUSIVE
@@ -157,10 +157,10 @@ Exemple de requête générique :
 SELECT [LIST] FROM TableA as A RIGHT JOIN TableB as B ON A.Foreignkey = B.Foreignkey WHERE A.Foreignkey IS NULL;
 ```
 
-Exemple de requête dans la BDD World : 
+Exemple de requête dans la BDD SAKILA : 
 
 ```SQL
--- SELECT * FROM cities as ci RIGHT JOIN countries as c ON ci.country_id = c.id WHERE ci.country_id IS NULL;
+SELECT film.title, language.name FROM language RIGHT JOIN film ON film.original_language_id = language.language_id WHERE film.original_language_id IS NULL;
 ```
 
 ### FULL OUTER INCLUSIVE
@@ -175,12 +175,6 @@ Exemple de requête générique :
 SELECT [LIST] FROM TableA as A FULL OUTER JOIN TableB as B ON A.Foreignkey = B.Foreignkey;
 ```
 
-Exemple de requête dans la BDD World : 
-
-```SQL
--- SELECT * FROM cities as ci RIGHT JOIN countries as c ON ci.country_id = c.id WHERE ci.country_id IS NULL;
-```
-
 ### FULL OUTER EXCLUSIVE
 
 <img src="./images/6.png" alt="FULL OUTER EXCLUSIVE" />
@@ -191,12 +185,6 @@ Exemple de requête générique :
 
 ```SQL
 SELECT [LIST] FROM TableA as A FULL OUTER JOIN TableB as B ON A.Foreignkey = B.Foreignkey WHERE A.Foreignkey IS NULL OR B.Foreignkey IS NULL;
-```
-
-Exemple de requête dans la BDD World : 
-
-```SQL
--- SELECT * FROM cities as ci RIGHT JOIN countries as c ON ci.country_id = c.id WHERE ci.country_id IS NULL;
 ```
 
 ### INNER
@@ -211,10 +199,10 @@ Exemple de requête générique :
 SELECT [LIST] FROM TableA as A INNER JOIN TableB as B ON A.Foreignkey = B.Foreignkey;
 ```
 
-Exemple de requête dans la BDD World : 
+Exemple de requête dans la BDD SAKILA : 
 
 ```SQL
--- SELECT * FROM cities as ci RIGHT JOIN countries as c ON ci.country_id = c.id WHERE ci.country_id IS NULL;
+SELECT * FROM city INNER JOIN country ON city.country_id = country.country_id;
 ```
 
 
@@ -241,36 +229,3 @@ Il existe 4 possibilités de traitement pour les `ON UPDATE` & `ON DELETE` :
 
 
 
-
-## TP 1
-
-En individuel, vous allez devoir continuer, ce fichier readme : 
-
-- Vous créez votre propre fichier, a part
-- Vous traitez un maximum de cas de figure sur le site sql.sh
-- Vous ne faites ni de jointure, ni de procédures stockées, ni de trigger
-
-Vous allez devoir pour chaque instruction que l'on n'a pas vu : 
-
-1. expliquer l'instruction rapidement
-2. en vous servant de la base de données "SAKILA", vous allez créer 1 à 3 cas defigure nécessitants une requete. Par exemple :"Récupérer tous les state_code de la table cities sans aucun doublon". Vous devrez ensuite écrire la requete SQL correspondante, par exemple : `SELECT DISTINCT state_code FROM cities;`. Notez le nombre de résultats obtenus par exemple (1185).
-
-
-## TP 2
-
-Refaire les requêtes dans la BDD World (des requêtes qui font sens !) pour qu'on les intègre dans le cours
-Idem que TP1, mais sur les jointures. (BDD SAKILA)
-
-
-
-
-
-```SQL
-
-SELECT * FROM A INNER JOIN B ON A.key = B.key
-SELECT * FROM B OUTER JOIN A ON A.key = B.key
-SELECT * FROM B LEFT JOIN A ON A.key = B.key
-SELECT * FROM A RIGHT JOIN B ON A.key = B.key
-
-
-```
