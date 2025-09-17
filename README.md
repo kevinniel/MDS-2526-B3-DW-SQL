@@ -56,6 +56,30 @@ OFFSET start
 | `LIKE 'a_c'`  | Le caractère `_` représente **un seul caractère** (contrairement à `%`)     | `aac`, `abc`, `azc`           |
 
 
+## Les premières instructions
+
+### Jouer avec les bases de données
+
+- `SHOW DATABASES` : Permet de voir la liste des BDD
+- `CREATE DATABASE <name>` : Permet de créer une BDD
+- `USE <database>` : Permet de "rentrer" dans une BDD en CLI pour interagir avec
+- `DROP DATABASE <name>` : Permet de supprimer une BDD
+
+### Jouer avec les tables
+
+- `CREATE TABLE <table>` : Permet de créer une table
+- `ALTER TABLE <table>` : Permet de MAJ une table
+- `DROP TABLE <table>` : Permet de supprimer une table
+- `SHOW TABLES` : Permet de voir la liste des tables
+- `DESCRIBE <table>` : Permet de décrire les colonnes d'une table
+- `TRUNCATE <table>` : Supprime les données dans une table
+
+### Jouer avec les données
+
+- `INSERT INTO <table> (colonne1, colonne2, ...) VALUES ('valeur 1', 'valeur 2', ...)` : Permet d'insérer des données dans une table
+- `UPDATE <table> SET colonne1 = 'nouvelle valeur' WHERE ...` : Permet de mettre à jour des données dans une table
+- `DELETE FROM <table> WHERE ....` : Permet de supprimer des données dans une table
+
 ## Exemples de requetes pour pratiquer sur la BDD WORLD
 
 - `SELECT DISTINCT state_code FROM cities;` (1185)
@@ -242,6 +266,11 @@ Il existe 4 possibilités de traitement pour les `ON UPDATE` & `ON DELETE` :
 - `SET NULL` : lors d’un `UPDATE` ou d’un `DELETE`, les colonnes de clé étrangère des lignes enfants sont remplacées par `NULL` (si elles l’acceptent).
 - `RESTRICT` : blocage instantané.
 - `NO ACTION` : blocage seulement à la validation de la transaction.
+
+# TP
+Réaliser les requêtes suivantes : 
+
+
 
 
 
