@@ -87,6 +87,10 @@ OFFSET start
     - INNER : récupère les informations des tables de gauche ET de droite, dont la FK n'est pas nulle
     - OUTER : récupère les informations des tables de gauche et de droite
 
+Quelques rappels **SIMPLES** pour la gestion des foreign keys dans les relations : 
+
+<img src="./images/simple.png" alt="SIMPLE" />
+
 ### LEFT INCLUSIVE
 
 <img src="./images/1.png" alt="LEFT INCLUSIVE" />
