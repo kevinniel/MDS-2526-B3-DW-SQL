@@ -214,6 +214,21 @@ Exemple de requête dans la BDD World :
 ```
 
 
+## Explication des contraintes
+
+- C'est une règle qui concerne une ou plusieurs colonne(s). Elle existe souvent quand on a une clé étrangère.
+- On peut en avoir autant qu'on le souhaite
+- Elle a 3 propriétés : 
+    - Un nom pour l'identifier.
+    - `ON DELETE` : l'action effectuée lors de la suppression d'une ligne concernée par la contrainte
+    - `ON UPDATE` : l'action effectuée lors de la modification d'une ligne concernée par la contrainte
+
+Il existe 4 possibilités de traitement pour les `ON UPDATE` & `ON DELETE` : 
+- `CASCADE` : lors d’un `UPDATE` de la clé primaire, la valeur est répercutée dans toutes les clés étrangères correspondantes ; lors d’un `DELETE`, toutes les lignes enfants référencées sont supprimées.
+- `SET NULL` : lors d’un `UPDATE` ou d’un `DELETE`, les colonnes de clé étrangère des lignes enfants sont remplacées par `NULL` (si elles l’acceptent).
+- `RESTRICT` : blocage instantané.
+- `NO ACTION` : blocage seulement à la validation de la transaction.
+
 
 
 
