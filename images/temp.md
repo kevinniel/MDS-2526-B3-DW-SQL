@@ -73,7 +73,8 @@ Chaque utilisateur possède un compte personnel et gère ses propres données.
 - Numéro de lot / référence cadastrale  
 - Présence de dépendances  
 - Année de construction  
-- RIB/IBAN associé par défaut  
+- RIB/IBAN associé par défaut 
+- Bailleur par défaut
 
 ---
 
