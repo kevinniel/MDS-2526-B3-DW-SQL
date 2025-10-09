@@ -34,7 +34,7 @@ Correspond à une table en base de données. A pour vocation à regrouper diffé
 
 Elle se représente par : 
 
-<img src="./images/mcd_1.png" />
+<img src="./images/mcd_0.png" />
 
 Et un ensemble d'entités : 
 
