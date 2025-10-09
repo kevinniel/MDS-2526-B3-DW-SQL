@@ -128,10 +128,10 @@ Chaque dossier regroupe **un bailleur, un ou plusieurs locataires, un bien immob
 - Validation manuelle (ex : modale de confirmation)  
 - Envoi automatique d’une quittance par email après validation  
 - Régularisation des charges :  
-  - Facture réelle enregistrée  
-  - Déduction des montants déjà versés  
-  - Calcul du solde à régulariser  
-  - Validation paiement  
+    - Facture réelle enregistrée  
+    - Déduction des montants déjà versés  
+    - Calcul du solde à régulariser  
+    - Validation paiement  
 
 ---
 
@@ -139,9 +139,9 @@ Chaque dossier regroupe **un bailleur, un ou plusieurs locataires, un bien immob
 - Gestion des utilisateurs (activation, rôles)  
 - Bibliothèque de modèles (baux, quittances, courriers types)  
 - Paramètres globaux :  
-  - IRL de référence par défaut  
-  - Pénalité de retard par défaut  
-  - Mentions légales  
+    - IRL de référence par défaut  
+    - Pénalité de retard par défaut  
+    - Mentions légales  
 - Journaux (audit log) : qui a fait quoi, quand  
 
 ## Travail à réaliser
