@@ -6,6 +6,12 @@
 - `https://github.com/Microleadoff/database-installer-py` : lien de l'installateur des 4 BDD en python
 - `https://cartman34.fr/wp-content/uploads/2017/01/sql_joins.jpg`, `https://miro.medium.com/v2/0*bkfApXMFeO1E7Pom.png` : images sur les jointures
 
+## Vocabulaire
+
+- `Persistence des données` : Les données sont conservées durablement et restent accessibles même après l’arrêt ou le redémarrage du système.
+- `Intégrité des données` : Les données restent exactes, cohérentes et conformes aux règles de validation et de typage tout au long de leur cycle de vie.
+- `Disponibilité des données` : Les données sont accessibles et utilisables à tout moment par les utilisateurs ou les applications autorisées, sans interruption de service.
+
 ### Ordre des mots-clés dans une requête
 
 ```sql
