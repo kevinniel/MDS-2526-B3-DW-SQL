@@ -28,12 +28,31 @@ Pour rappel :
 
 ## Etape 2 : MCD Modèle Conceptuel de Données
 
-- `Entité` : Correspond à une table en base de données. A pour vocation à regrouper différents champs.
-- `Association` : Correspond aux "relations" qu'on aura entre les entités. Elle possède un **nom** (souvent on appelle ça un "verbe d'action") et éventuellement des **propriétés**. Elles peuvent être une table à terme ou non.
-- `Liaison` : On peut "relier" les entités entre elles - via les association. 
-- `Cardinalités` : Elles représentent le nombre d'associations possibles entre les différentes entités reliées.
+### Entité
+
+Correspond à une table en base de données. A pour vocation à regrouper différents champs.
+
+Elle se représente par : 
+<img src="./images/mcd_1.png" />
+
+Et un ensemble d'entités : 
+<img src="./images/mcd_3.png" />
+
+### Association
+
+Correspond aux "relations" qu'on aura entre les entités. Elle possède un **nom** (souvent on appelle ça un "verbe d'action") et éventuellement des **propriétés**. Elles peuvent être une table à terme ou non.
+
+Elle se représente par : 
+<img src="./images/mcd_2.png" />
 
 
+### Liaison & cardinalités
+
+On peut "relier" les entités entre elles - via les association. On appelle ça une "liaison".
+Chaque liaison dispose de cardinalités : Elles représentent le nombre d'associations possibles entre les différentes entités reliées.
+
+Exemple d'entités + associations + liaisons + cardinalités
+<img src="./images/mcd_4.png" />
 
 
 ## Etape 3 : MLD Modèle Logique de Données
