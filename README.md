@@ -11,6 +11,7 @@
 - `Persistence des données` : Les données sont conservées durablement et restent accessibles même après l’arrêt ou le redémarrage du système.
 - `Intégrité des données` : Les données restent exactes, cohérentes et conformes aux règles de validation et de typage tout au long de leur cycle de vie.
 - `Disponibilité des données` : Les données sont accessibles et utilisables à tout moment par les utilisateurs ou les applications autorisées, sans interruption de service.
+- `Redondance des données` : Les données sont répliquées à l'identique dans plusieurs tables. C'est mal.
 
 ### Ordre des mots-clés dans une requête
 

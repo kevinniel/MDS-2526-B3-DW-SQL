@@ -43,7 +43,7 @@ Chaque utilisateur possède un compte personnel et gère ses propres données.
 
 **Garant(s) :**  
 - Identité et coordonnées  
-- Revenus  
+- Revenus
 - Type de caution (simple / solidaire)  
 - Durée  
 
@@ -124,19 +124,19 @@ Chaque dossier regroupe **un bailleur, un ou plusieurs locataires, un bien immob
 ---
 
 ## 8. Gestion des paiements
-- Suivi des loyers payés  
-- Validation manuelle (ex : modale de confirmation)  
-- Envoi automatique d’une quittance par email après validation  
-- Régularisation des charges :  
-    - Facture réelle enregistrée  
-    - Déduction des montants déjà versés  
-    - Calcul du solde à régulariser  
-    - Validation paiement  
+- Suivi des loyers payés
+- Validation manuelle (ex : modale de confirmation)
+- Envoi automatique d’une quittance par email après validation
+- Régularisation des charges :
+    - Facture réelle enregistrée
+    - Déduction des montants déjà versés
+    - Calcul du solde à régulariser
+    - Validation paiement
 
 ---
 
 ## 9. Administration
-- Gestion des utilisateurs (activation, rôles)  
+- Gestion des utilisateurs (rôles)  
 - Bibliothèque de modèles (baux, quittances, courriers types)  
 - Paramètres globaux :  
     - IRL de référence par défaut  
@@ -144,10 +144,40 @@ Chaque dossier regroupe **un bailleur, un ou plusieurs locataires, un bien immob
     - Mentions légales  
 - Journaux (audit log) : qui a fait quoi, quand  
 
-## Travail à réaliser
 
+
+
+
+## DO NOT TOUCH MTF
 - Dictionnaire de données (Nom de l’entité, Nom de l’attribut, Type, Taille, Contraintes, Commentaire)  
 - MCD  
 - MLD  
 - MPD  
 - Script SQL de création de tables 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
