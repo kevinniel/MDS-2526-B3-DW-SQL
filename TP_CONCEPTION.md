@@ -135,17 +135,18 @@ Chaque dossier regroupe **un bailleur, un ou plusieurs locataires, un bien immob
 
 ---
 
+# NE PAS FAIRE
+
 ## 9. Administration
-- Gestion des utilisateurs (rôles)  
-- Bibliothèque de modèles (baux, quittances, courriers types)  
+- Gestion des utilisateurs (rôles)
+
+- Bibliothèque de modèles (baux, quittances, courriers types)
+
 - Paramètres globaux :  
     - IRL de référence par défaut  
     - Pénalité de retard par défaut  
     - Mentions légales  
 - Journaux (audit log) : qui a fait quoi, quand  
-
-
-
 
 
 ## DO NOT TOUCH MTF
