@@ -58,6 +58,17 @@ Exemple d'entités + associations + liaisons + cardinalités
 
 <img src="./images/mcd_4.png" />
 
+⚠️ **ATTENTION** ⚠️
+Le sens de lecture peut être difficile. Voici un exemple pour s'en souvenir : 
+
+Dans l'exemple ci-dessous, il faut lire : 
+
+> un client peut avoir un ou plusieurs contrat, mais un contrat ne peut avoir que un et un seul client.
+
+<img src="./images/mcd_5.png" />
+
+
+
 
 ## Etape 3 : MLD Modèle Logique de Données
 
