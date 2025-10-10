@@ -146,3 +146,10 @@ CREATE TABLE Contrat (
 ```
 
 Pour la réalisation du MPD, je vous recommande MySQL Workbench 😇
+
+
+
+# TP Conception
+1. Faire le MCD et me l'envoyer par MP dès qu'il est prêt.
+2. Faire le MLD et me l'envoyer par MP dès qu'il est prêt.
+2. Faire le MPD et me l'envoyer par MP dès qu'il est prêt.
