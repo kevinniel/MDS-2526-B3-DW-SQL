@@ -232,7 +232,7 @@ SELECT [LIST] FROM TableA as A FULL OUTER JOIN TableB as B ON A.Foreignkey = B.F
 
 <img src="./images/6.png" alt="FULL OUTER EXCLUSIVE" />
 
-Récupère toutes les lignes des tables de droite et de gauche, dont la Foreign Key de la table de gauche n'est pas nulle.
+Récupère toutes les lignes des tables de droite et de gauche, dont la Foreign Key des deux tables sont nulles.
 
 Exemple de requête générique : 
 
