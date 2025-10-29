@@ -37,12 +37,12 @@ Objectif du TP : Benchmarker différents SGBD pour comprendre leurs avantages et
 - Créer des index sur les colonnes `nom` et `boolean` des deux tables.
 - Recommencer les mêmes requetes et noter les nouveaux temps
 
-## Etape 7 
+## Etape 6 
 
 Déduire dans quels cas de figure chacune de ces 3 types de base de données sont pertinentes, justifiez avec vos chiffres et avec vos mots.
 
 
-## Etape 6
+## Etape 7
 
 - Envoyez moi votre document, avec tous les screens de chaque étape, au format PDF à `k.niel.pro@gmail.com`.
 - Mettez en objet : `NOM Prénom - MDS B3 SQL`.
