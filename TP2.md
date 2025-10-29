@@ -27,5 +27,13 @@ Objectif du TP : Benchmarker différents SGBD pour comprendre leurs avantages et
 - Requeter toutes les lignes en ordonnant par ordre alphabetique ASC sur le nom
 - Requeter toutes les lignes avec les jointures
 
+## Etape 4
 
+- Faire un update sur toutes les lignes pour changer le boolean à false
+- Faire un update sur toutes les lignes pour changer la FK en faisant un "+1" à chaque fois, et si c'est à 5000000 on la repasse à 1.
+
+## Etape 5
+
+- Créer des index sur les colonnes `nom` et `boolean` des deux tables.
+- Recommencer les mêmes requetes et noter les nouveaux temps
 
