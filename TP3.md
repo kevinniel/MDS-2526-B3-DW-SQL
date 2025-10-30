@@ -149,4 +149,4 @@ Rédigez un court paragraphe de conclusion :
 ## Etape 8
 
 - Envoyez moi votre document,avec tous les screens de chaque étape,au format PDF à `k.niel.pro@gmail.com`.
-- Mettez en objet :`NOM Prénom - MDS B3 SQL`.
+- Mettez en objet :`NOM Prénom - MDS B3 noSQL`.
