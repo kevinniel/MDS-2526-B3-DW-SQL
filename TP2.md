@@ -1,6 +1,6 @@
 # Travaux à faire en individuel
 
-Objectif du TP : Benchmarker différents SGBD pour comprendre leurs avantages et inconvénients.
+Objectif du TP :Benchmarker différents SGBD pour comprendre leurs avantages et inconvénients.
 
 **Vous devez noter le temps que vous mettez pour chacune des étapes ci-dessous !**
 
@@ -12,7 +12,7 @@ Objectif du TP : Benchmarker différents SGBD pour comprendre leurs avantages et
 
 ## Etape 2
 
-- Créer 2 tables, avec 4 colonnes chacunes
+- Créer 2 tables,avec 4 colonnes chacunes
 - 1 relation de la table A vers la table B
 - 1 colonne devra être un boolean randomisé vrai/faux
 - 2 colonnes noms / prénoms
@@ -30,7 +30,7 @@ Objectif du TP : Benchmarker différents SGBD pour comprendre leurs avantages et
 ## Etape 4
 
 - Faire un update sur toutes les lignes pour changer le boolean à false
-- Faire un update sur toutes les lignes pour changer la FK en faisant un "+1" à chaque fois, et si c'est à 5000000 on la repasse à 1.
+- Faire un update sur toutes les lignes pour changer la FK en faisant un "+1" à chaque fois,et si c'est à 5000000 on la repasse à 1.
 
 ## Etape 5
 
@@ -39,10 +39,10 @@ Objectif du TP : Benchmarker différents SGBD pour comprendre leurs avantages et
 
 ## Etape 6 
 
-Déduire dans quels cas de figure chacune de ces 3 types de base de données sont pertinentes, justifiez avec vos chiffres et avec vos mots.
+Déduire dans quels cas de figure chacune de ces 3 types de base de données sont pertinentes,justifiez avec vos chiffres et avec vos mots.
 
 
 ## Etape 7
 
-- Envoyez moi votre document, avec tous les screens de chaque étape, au format PDF à `k.niel.pro@gmail.com`.
-- Mettez en objet : `NOM Prénom - MDS B3 SQL`.
+- Envoyez moi votre document,avec tous les screens de chaque étape,au format PDF à `k.niel.pro@gmail.com`.
+- Mettez en objet :`NOM Prénom - MDS B3 SQL`.
